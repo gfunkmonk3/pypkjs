@@ -1,0 +1,17 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: peewee
+    versions:
+    - 3.14.0
+    - 3.14.1
+    - 3.14.2
+    - 3.14.3
+  - dependency-name: websocket-client
+    versions:
+    - 0.57.0
